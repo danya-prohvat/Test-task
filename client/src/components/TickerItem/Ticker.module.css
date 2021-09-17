@@ -1,0 +1,82 @@
+.tickerItem {
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    border: 1px solid #DADCE0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 180px;
+    width: 100%;
+    padding: 5px 5px;
+}
+
+.tickerItem__img {
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tickerItem__img_negative {
+    background-color: #FCE8E6;
+}
+
+.tickerItem__img_positive {
+    background-color: #E6F4EA;
+}
+
+.tickerItem__img img {
+    width: 20px;
+}
+
+.tickerItem__description {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    margin-left: 6px;
+}
+
+.description__topLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description__bottomLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description__ticker {
+    font-size: 16px;
+    display: inline;
+}
+
+.description__price {
+    font-size: 14px;
+    display: inline;
+}
+
+.description__changePercent {
+    font-size: 12px;
+    display: inline;
+}
+
+.description__change {
+    font-size: 12px;
+    display: inline;
+}
+
+.negativeValue {
+    color: #B90E0E;
+}
+
+.positiveValue {
+    color: #317333;
+}

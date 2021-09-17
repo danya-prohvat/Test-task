@@ -1,0 +1,10 @@
+.ticker {
+    padding-top: 120px;
+    width: 96%;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
