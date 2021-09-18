@@ -17,7 +17,7 @@ const Tickers = () => {
         dispatch(setUnWatchingTicker(event.currentTarget.id))
     }
 
-    return (<div className={classNames(styles.ticker)}>
+    return (<div className={classNames(styles.tickers)}>
             {tickers.map(ticker => <Ticker key={ticker.ticker} ticker={ticker.ticker} price={ticker.price}
                                            change_percent={ticker.change_percent} change={ticker.change}
                                            unWatchingMode={unWatchingGroup.some(unWatchTicker => unWatchTicker === ticker.ticker)}

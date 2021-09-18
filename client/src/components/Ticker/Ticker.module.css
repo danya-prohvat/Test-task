@@ -32,7 +32,6 @@
 }
 
 .ticker {
-    /*background-color: #FFFFFF;*/
     border-radius: 7px;
     border: 1px solid #DADCE0;
     box-sizing: border-box;
@@ -88,7 +87,7 @@
     animation: imgShowUpFromBottom .6s;
 }
 
-.tickerItem__description {
+.ticker__description {
     display: flex;
     flex-direction: column;
     width: 140px;

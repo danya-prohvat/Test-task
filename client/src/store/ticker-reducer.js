@@ -6,9 +6,7 @@ const SET_UN_WATCHING_TICKER = 'SET-UN-WATCHING-TICKER';
 
 let initialState = {
     tickers: [],
-    unWatchingGroup: [
-        // 'GOOGL', 'AAPL', 'FB'
-    ]
+    unWatchingGroup: []
 };
 
 const tickerReducer = (state = initialState, action) => {
