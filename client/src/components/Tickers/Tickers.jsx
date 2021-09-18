@@ -3,14 +3,14 @@ import styles from "./Tickers.module.css";
 import classNames from 'classnames';
 import Ticker from "../Ticker/Ticker";
 import {useDispatch, useSelector} from "react-redux";
-import {setUnWatchingTicker, subscribeToTickerListener} from "../../store/ticker-reducer";
+import {setUnWatchingTicker, requestTickers} from "../../store/ticker-reducer";
 
 const Tickers = () => {
     const {tickers, unWatchingGroup} = useSelector(state => state.tickerReducer);
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(subscribeToTickerListener())
+        dispatch(requestTickers())
     }, [])
 
     const tickerOnClick = (event) => {

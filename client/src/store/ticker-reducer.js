@@ -43,10 +43,12 @@ const tickerReducer = (state = initialState, action) => {
 export const setTickers = (tickers) => ({type: SET_TICKERS, tickers});
 export const setUnWatchingTicker = (ticker) => ({type: SET_UN_WATCHING_TICKER, ticker});
 
-export const subscribeToTickerListener = () => async (dispatch) => {
-    const socket = io.connect('http://localhost:4000');
-    socket.on('ticker', response => {
-        dispatch(setTickers(response))
+export const requestTickers = () => async (dispatch) => {
+    const socket = io('http://localhost:4000');
+    socket.on("connect", () => {
+        socket.on('ticker', response => {
+            dispatch(setTickers(response))
+        });
     });
 }
 
