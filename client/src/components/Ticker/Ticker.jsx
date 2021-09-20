@@ -26,7 +26,8 @@ const Ticker = (props) => {
     }, [props])
 
 
-    return (<div id={ticker} onClick={tickerOnClick} className={classNames(styles.ticker, {[styles.tickerDisables]: unWatchingMode})}>
+    return (<div id={ticker} onClick={tickerOnClick}
+                 className={classNames(styles.ticker, {[styles.tickerDisables]: unWatchingMode})}>
         <div className={classNames(styles.ticker__img)}>
             {change_percent > 0 ? <img className={animationClass[1]} src={arrowTop} alt=""/> :
                 <img className={animationClass[0]} src={arrowDown} alt=""/>}
